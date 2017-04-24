@@ -1,0 +1,474 @@
+	body {
+		font-family: helvetica, sans-serif;
+	}
+
+	@font-face {
+		font-family: 'icons';
+		src: url('icons.ttf')  format('truetype');
+	}
+
+	div, input {
+		box-sizing: border-box;
+	}
+	.wrapper{
+	    margin-right:auto;
+	    margin-left:auto;
+
+	}
+
+	.container {
+	  position:fixed;
+	  overflow-y:scroll;
+		 width: 100%;
+    height: 100%;
+    margin-top:-8px;
+    margin-left:-8px;
+		padding: 35px 0;
+		padding-top:0px;
+		background: -webkit-linear-gradient(left,#005b96, #b3cde0 50%, #005b96);
+	}
+
+	.AddForm {
+		position:relative;
+		margin: auto;
+		width:1500px;
+		background:-webkit-linear-gradient(45deg,#F0AB00, #FFE6AA 50%, #F0AB00);
+		padding-bottom:100px;
+	}
+
+#AddTopHead{
+	position:relative;
+		top: 0px;
+	width:100%;
+	height: 44px;
+    		line-height: 44px;
+    		padding-left: 30px;
+    		font-size: 20px;
+    		background:  325px center no-repeat, -webkit-linear-gradient(top, rgb(253,253,253), rgb(198,203,199));
+	}
+    .AddLogo{
+        width:320px;
+        height:44px;
+        position:absolute;
+    }
+	.AddHeader {
+		height: 44px;
+		line-height: 44px;
+		padding-left: 30px;
+		font-size: 20px;
+		margin-bottom:25px;
+		background:  325px center no-repeat, -webkit-linear-gradient(top, rgb(253,253,253), rgb(198,203,199));
+	}
+
+	form {
+		margin: 0 31px;
+
+	}
+
+	#addbtn {
+		float: right;
+		width: 134px; height: 38px;
+		border: 1px solid #005b96;
+		background:  15px center no-repeat, -webkit-linear-gradient(top, #03396c, #005b96);
+		font-weight: bold;
+		color: white;
+		text-align: right;
+		margin-top:26px;
+		padding-right: 42px;
+		margin-right:25px;
+	}
+
+	.AddSelect  {
+   background:  10px center no-repeat, -webkit-linear-gradient(45deg, #404040 0%, #404040 60%, #535353 60%, #494949);
+   position:relative;
+   margin-left:575px;
+   color: #AAA;
+   width: 15%;
+   padding: 5px;
+   font-size: 17px;
+   height: 30px;
+   }
+
+   .AddForm input[type=text]{
+    background:  10px center no-repeat, -webkit-linear-gradient(45deg, #404040 0%, #404040 60%, #535353 60%, #494949);
+    height:30px;
+    width:600px;
+    color: #AAA;
+   }
+  .Addform  input[type=text]:focus{
+        outline: 0;
+   		box-shadow: inset 0 0 8px rgba(226,239,207,.7);
+   }
+
+    .AddForm textarea{
+       background:  10px center no-repeat, -webkit-linear-gradient(45deg, #404040 0%, #404040 60%, #535353 60%, #494949);
+       width:600px;
+       height: 150px;
+       color: #AAA;
+      }
+      textarea:focus{
+           outline: 0;
+      		box-shadow: inset 0 0 8px rgba(226,239,207,.7);
+      }
+
+	#addbtn:active {
+		box-shadow: inset 0 -3 5px rgba(0,0,0,.5);
+		background: -webkit-linear-gradient(top, #011f4b, #03396c);
+	}
+	.error{
+        text-align:center;
+    	font-size:32px;
+    	color:Red;
+    }
+    .AddTable {
+    postion:relative;
+    border-collapse: collapse;
+    margin-top:50px;
+
+
+}
+
+.AddTable th, td {
+    text-align: left;
+    padding: 5px;
+    border:none;
+}
+
+tr:nth-child(odd){background-color: #b3cde0}
+tr:nth-child(even){background-color: #f2f2f2}
+
+#AddTopHead a{
+	position:relative;
+       float:right;
+       width: 134px;
+       height: 44px;
+       border-left:1px solid #005b96;
+       background:  325px center no-repeat, -webkit-linear-gradient(top, rgb(253,253,253), rgb(198,203,199));
+       font-weight: bold;
+       color: black;
+       text-align: center;
+       padding-left: 20px;
+       padding-right: 20px;
+       text-decoration:none;
+                }
+
+  .AddTopHead a:active {
+    		box-shadow: inset 0 -3 5px rgba(0,0,0,.5);
+    		background: -webkit-linear-gradient(top, #a8a8a8, #939393);
+    	}
+
+
+	.EditForm {
+		margin: auto;
+		width:55%;
+		background:-webkit-linear-gradient(45deg,#F0AB00, #FFE6AA 50%, #F0AB00);
+		padding-bottom:40;
+	}
+
+#EditTopHead{
+		top: 0px;
+	width:100%;
+	height: 44px;
+    		line-height: 44px;
+    		padding-left: 30px;
+    		font-size: 20px;
+    		background:  -webkit-linear-gradient(top, rgb(253,253,253), rgb(198,203,199));
+	}
+    .EditLogo{
+        width:320px;
+        height:44px;
+        position:absolute;
+    }
+	.EditHeader {
+		height: 44px;
+		line-height: 44px;
+		padding-left: 30px;
+		margin-bottom:25px;
+		font-size: 20px;
+		background:  -webkit-linear-gradient(top, rgb(253,253,253), rgb(198,203,199));
+	}
+
+
+	textarea {
+    width: 600px;
+    height: 150px;
+    background: -webkit-linear-gradient(45deg, #404040 0%, #404040 60%, #535353 60%, #494949);
+    color: #AAA;
+
+}
+textarea:focus {
+		outline: 0;
+		box-shadow: inset 0 0 8px rgba(226,239,207,.7);
+	}
+
+	 input[type=text] {
+		display:inline;
+		width: 600px;
+		height: 38px;
+		padding-left: 38px;
+		padding-right:-50px;
+		background:  -webkit-linear-gradient(45deg, #404040 0%, #404040 60%, #535353 60%, #494949);
+		color: #AAA;
+		border: 1px solid black;
+	}
+
+	input[type=text]:focus {
+		outline: 0;
+		box-shadow: inset 0 0 8px rgba(226,239,207,.7);
+	}
+
+	.EditButton {
+		float: right;
+		width: 134px; height: 38px;
+		border: 1px solid #005b96;
+		background:  -webkit-linear-gradient(top, #03396c, #005b96);
+		font-weight: bold;
+		color: white;
+		text-align: right;
+		margin-left:10px;
+		padding-right: 42px;
+	}
+
+	.EditButton:active {
+		box-shadow: inset 0 -3 5px rgba(0,0,0,.5);
+		background: -webkit-linear-gradient(top, #011f4b, #03396c);
+	}
+	.error{
+        text-align:center;
+    	font-size:32px;
+    	color:Red;
+    }
+    .EditTable {
+    border-collapse: collapse;
+    margin-left:auto;
+    margin-right:auto;
+    margin-bottom:10
+}
+
+
+
+
+.EditTable tr, td {
+    text-align: left;
+    padding: 5px;
+    display: block;
+}
+
+tr:nth-child(odd){background-color: #b3cde0}
+tr:nth-child(even){background-color: #f2f2f2}
+
+    #EditBotButtons a {
+        float:right;
+          border: 1px solid #005b96;
+          background:   -webkit-linear-gradient(top, #03396c, #005b96);
+          color: white;
+          text-align: center;
+          padding-left: 30px;
+          padding-right: 30px;
+          padding-top:9px;
+          padding-bottom:9px;
+          text-decoration:none;
+                   }
+
+       #EditBotButtons a:active {
+       		box-shadow: inset 0 -3 5px rgba(0,0,0,.5);
+       		background: -webkit-linear-gradient(top, #011f4b, #03396c);
+       	}
+
+    	#EditTopHead a{
+       float:right;
+       width: 134px;
+       height: 44px;
+       border-left:1px solid #005b96;
+       background:  -webkit-linear-gradient(top, rgb(253,253,253), rgb(198,203,199));
+       font-weight: bold;
+       color: black;
+       text-align: center;
+       padding-left: 20px;
+       padding-right: 20px;
+
+       text-decoration:none;
+                }
+   #EditTopHead a:active {
+    		box-shadow: inset 0 -3 5px rgba(0,0,0,.5);
+    		background: -webkit-linear-gradient(top, #a8a8a8, #939393);
+    	}
+
+	.LoginForm {
+		width: 365px; height: 274px;
+		margin: auto;
+		margin-top:20rem;
+		background:-webkit-linear-gradient(45deg,#F0AB00, #FFE6AA 50%, #F0AB00);;
+		padding: 0px;
+	}
+
+	.LoginTopHead{
+		top: 0px;
+	width:100%;
+	height: 44px;
+    		line-height: 44px;
+    		padding-left: 30px;
+    		font-size: 20px;
+    		background:  325px center no-repeat, -webkit-linear-gradient(top, rgb(253,253,253), rgb(198,203,199));
+	}
+    .LoginLogo{
+        width:320px;
+        height:44px;
+        position:absolute;
+    }
+	.LoginHeader {
+		height: 44px;
+		line-height: 44px;
+		padding-left: 30px;
+		font-size: 20px;
+		background: url('http://i.imgur.com/s0O9hy0.png') 325px center no-repeat, -webkit-linear-gradient(top, rgb(253,253,253), rgb(198,203,199));
+	}
+
+.LoginForm	input[type=text], input[type=password] {
+		display: block;
+		width: 100%;
+		height: 38px;
+		padding-left: 38px;
+		background:  10px center no-repeat, -webkit-linear-gradient(45deg, #404040 0%, #404040 60%, #535353 60%, #494949);
+		color: #AAA;
+		border: 1px solid black;
+		transition: box-shadow .3s;
+	}
+
+	.LoginForm input[type=text]:focus, input[type=password]:focus {
+		outline: 0;
+		box-shadow: inset 0 0 8px rgba(226,239,207,.7);
+	}
+
+	.LoginForm input[type=text] { margin-top: 36px; margin-bottom: 26px; }
+
+	.LoginForm input[type=password] { margin-bottom: 36px; margin-top: 26px; }
+
+
+	.LoginButton {
+		float: right;
+		width: 134px; height: 31px;
+		border: 1px solid #005b96;
+		background:  15px center no-repeat, -webkit-linear-gradient(top, #03396c, #005b96);
+		font-weight: bold;
+		color: white;
+		text-align: right;
+		padding-right: 22px;
+	}
+
+	.LoginButton:active {
+		box-shadow: inset 0 -3 5px rgba(0,0,0,.5);
+		background: -webkit-linear-gradient(top, #011f4b, #03396c);
+	}
+
+     	.Viewform {
+     		margin: auto;
+     		width:55%;
+     		background:-webkit-linear-gradient(45deg,#F0AB00, #FFE6AA 50%, #F0AB00);
+     		padding-bottom:40;
+     	}
+
+     #ViewTopHead{
+     		top: 0px;
+     	width:100%;
+     	height: 44px;
+         		line-height: 44px;
+         		padding-left: 30px;
+         		font-size: 20px;
+         		background:  325px center no-repeat, -webkit-linear-gradient(top, rgb(253,253,253), rgb(198,203,199));
+     	}
+         .ViewLogo{
+             width:320px;
+             height:44px;
+             position:absolute;
+         }
+     	.ViewHeader {
+
+     		height: 44px;
+     		line-height: 44px;
+     		padding-left: 30px;
+     		margin-bottom:25px;
+     		font-size: 20px;
+     		background:  325px center no-repeat, -webkit-linear-gradient(top, rgb(253,253,253), rgb(198,203,199));
+     	}
+
+         .ViewTable {
+
+         border-collapse: collapse;
+         margin-left:auto;
+         margin-right:auto;
+         margin-bottom:10
+     }
+
+
+
+     .long {
+         overflow:scroll;
+     	white-space:nowrap;
+         word-break:break-word;
+        	width:300px;
+         overflow: hidden;
+         text-overflow: ellipsis;
+     }
+
+
+     .long:hover {
+
+        z-index:10;
+        top:0;
+        left:0;
+
+        overflow:visible;
+     }
+
+     .ViewTable tr, td {
+         text-align: left;
+         padding: 5px;
+         display: block;
+     }
+
+     tr:nth-child(odd){background-color: #b3cde0}
+     tr:nth-child(even){background-color: #f2f2f2}
+
+
+
+         #ViewBotButtons a {
+            float:right;
+            width: 134px; height: 30px;
+            margin-right:10px;
+            margin-left:-8px;
+            border: 1px solid #005b96;
+            background:   -webkit-linear-gradient(top, #03396c, #005b96);
+            font-weight: bold;
+            color: white;
+            text-align: center;
+            padding-left: 20px;
+            padding-right: 20px;
+            padding-top:2px;
+            padding-bottom:2px;
+            text-decoration:none;
+                     }
+
+         #ViewBotButtons a:active {
+         		box-shadow: inset 0 -3 5px rgba(0,0,0,.5);
+         		background: -webkit-linear-gradient(top, #011f4b, #03396c);
+         	}
+
+         	#ViewTopHead a{
+            float:right;
+            width: 134px;
+            height: 44px;
+            border-left:1px solid #005b96;
+            background:  325px center no-repeat, -webkit-linear-gradient(top, rgb(253,253,253), rgb(198,203,199));
+            font-weight: bold;
+            color: black;
+            text-align: center;
+            padding-left: 20px;
+            padding-right: 20px;
+
+            text-decoration:none;
+                     }
+        #ViewTopHead a:active {
+         		box-shadow: inset 0 -3 5px rgba(0,0,0,.5);
+         		background: -webkit-linear-gradient(top, #a8a8a8, #939393);
+         	}

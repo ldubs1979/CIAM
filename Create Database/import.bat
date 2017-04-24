@@ -1,0 +1,1 @@
+mongoimport --db CIAM2 --collection Assets --drop --file C:\AssetData.json && mongoimport --db CIAM2 --collection Users --drop --file C:\UserData.json

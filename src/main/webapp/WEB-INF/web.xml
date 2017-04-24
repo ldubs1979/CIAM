@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+
+<web-app xmlns="http://xmlns.jcp.org/xml/ns/javaee"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee
+                      http://xmlns.jcp.org/xml/ns/javaee/web-app_3_1.xsd"
+         version="3.1"
+         metadata-complete="true">
+  <welcome-file-list>
+  <welcome-file>login.jsp</welcome-file>
+</welcome-file-list>
+
+<display-name>Welcome to Tomcat</display-name>
+  <description>
+    Welcome to Tomcat
+  </description>
+  <servlet>
+    <servlet-name>LoginChecker</servlet-name>
+    <servlet-class>com.fg.vms.keystore.LoginChecker</servlet-class>
+  </servlet>
+
+  <servlet-mapping>
+    <servlet-name>LoginChecker</servlet-name>
+    <url-pattern>/LoginChecker</url-pattern>
+  </servlet-mapping>
+
+  <servlet>
+    <servlet-name>UpdateEncryption</servlet-name>
+    <servlet-class>com.fg.vms.keystore.UpdateEncryption</servlet-class>
+  </servlet>
+
+  <servlet-mapping>
+    <servlet-name>UpdateEncryption</servlet-name>
+    <url-pattern>/UpdateEncryption</url-pattern>
+  </servlet-mapping>
+
+  <servlet>
+    <servlet-name>UpdateSFTP</servlet-name>
+    <servlet-class>com.fg.vms.keystore.UpdateSFTP</servlet-class>
+  </servlet>
+
+  <servlet-mapping>
+    <servlet-name>UpdateSFTP</servlet-name>
+    <url-pattern>/UpdateSFTP</url-pattern>
+  </servlet-mapping>
+
+  <servlet>
+    <servlet-name>DeleteAsset</servlet-name>
+    <servlet-class>com.fg.vms.keystore.DeleteAsset</servlet-class>
+  </servlet>
+
+  <servlet-mapping>
+    <servlet-name>DeleteAsset</servlet-name>
+    <url-pattern>/DeleteAsset</url-pattern>
+  </servlet-mapping>
+
+
+  <servlet>
+    <servlet-name>EditRouter</servlet-name>
+    <servlet-class>com.fg.vms.keystore.EditRouter</servlet-class>
+  </servlet>
+
+  <servlet-mapping>
+    <servlet-name>EditRouter</servlet-name>
+    <url-pattern>/EditRouter</url-pattern>
+  </servlet-mapping>
+
+
+  <servlet>
+  <servlet-name>AddEncryption</servlet-name>
+  <servlet-class>com.fg.vms.keystore.AddEncryption</servlet-class>
+</servlet>
+
+<servlet-mapping>
+<servlet-name>AddEncryption</servlet-name>
+<url-pattern>/AddEncryption</url-pattern>
+</servlet-mapping>
+  <servlet>
+    <servlet-name>AddSFTP</servlet-name>
+    <servlet-class>com.fg.vms.keystore.AddSFTP</servlet-class>
+  </servlet>
+
+  <servlet-mapping>
+    <servlet-name>AddSFTP</servlet-name>
+    <url-pattern>/AddSFTP</url-pattern>
+  </servlet-mapping>
+
+  <servlet>
+    <servlet-name>Query</servlet-name>
+    <servlet-class>com.fg.vms.keystore.Query</servlet-class>
+  </servlet>
+
+  <servlet-mapping>
+    <servlet-name>Query</servlet-name>
+    <url-pattern>/Query</url-pattern>
+  </servlet-mapping>
+
+  <servlet>
+    <servlet-name>AutocompleteController</servlet-name>
+    <servlet-class>com.fg.vms.keystore.AutocompleteController</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>AutocompleteController</servlet-name>
+    <url-pattern>/AutocompleteController</url-pattern>
+  </servlet-mapping>
+
+  <servlet>
+    <servlet-name>Logout</servlet-name>
+    <servlet-class>com.fg.vms.keystore.Logout</servlet-class>
+  </servlet>
+
+  <servlet-mapping>
+    <servlet-name>Logout</servlet-name>
+    <url-pattern>/Logout</url-pattern>
+  </servlet-mapping>
+
+</web-app>
